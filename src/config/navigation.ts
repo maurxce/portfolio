@@ -17,8 +17,8 @@ const items: NavItem[] = [
     path: "/#technologies"
   },
   {
-    name: "Contact",
-    path: "/#contact"
+    name: "Socials",
+    path: "/#socials"
   }
 ];
 

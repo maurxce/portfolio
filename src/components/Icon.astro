@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets'
+import type { Social } from '../config/socials'
+
+interface Props {
+  social: Social;
+}
+
+const { social } = Astro.props;
+---
+
+<a href={social.url}>
+  <Image
+    src={social.icon}
+    alt=`${social.name} Icon`
+    title={social.name}
+    width={64}
+    height={64}
+  />
+</a>
+
+<style>
+  img {
+    border-radius: 50%;
+  }
+</style>
