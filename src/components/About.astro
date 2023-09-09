@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets";
+import { name, profession, about } from "../config/about";
+import profilePicture from "../img/profile_picture.png";
+---
+
+<section id="about">
+  <div>
+    <div>
+      <p class="name">{name}</p>
+      <p class="profession">{profession}</p>
+      <p class="about">{about}</p>
+    </div>
+  </div>
+
+  <div>
+    <Image
+      class="profile"
+      src={profilePicture}
+      alt="Profile Picture"
+      width={160}
+      height={160}
+    />
+  </div>
+</section>
+
+<style>
+  section {
+    margin-top: 1em;
+    display: flex;
+    margin-left: clamp(1em, 2em, 5vw);
+    margin-right: clamp(1em, 2em, 5vw);
+  }
+
+  div {
+    margin: auto;
+    text-align: center;
+  }
+
+  p {
+    margin: auto;
+  }
+
+  p.name {
+    font-size: 1.75em;
+    font-weight: bold;
+  }
+
+  p.profession {
+    font-size: 1.125em;
+    opacity: 0.9;
+  }
+
+  p.about {
+    font-size: 0.85em;
+    font-style: italic;
+    opacity: 0.75;
+  }
+
+  img.profile {
+    border-radius: 50%;
+    margin-left: auto;
+    display: block;
+  }
+
+  @media (max-width: 53.25em) {
+    section {
+      flex-direction: column-reverse;
+      gap: 2em;
+    }
+
+    img.profile {
+      max-width: 75%;
+      margin: auto;
+    }
+  }
+</style>

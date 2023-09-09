@@ -1,0 +1,27 @@
+---
+import ThumbnailCard from "./ThumbnailCard.astro";
+import projects from "../config/projects";
+---
+
+<section id="projects">
+  <h3>Projects</h3>
+  <p>This is a sample description</p>
+
+  <div class="container">
+    {projects.map(project => (
+      <ThumbnailCard project={project} />
+    ))}
+  </div>
+
+  <a href="/projects">View all</a>
+</section>
+
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1em;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+</style>

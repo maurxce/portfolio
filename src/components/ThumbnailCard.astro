@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import type { Project } from "../config/projects";
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+---
+
+<div class="container">
+  <a href={project.path}>
+    <Image
+      src={project.thumbnail}
+      alt=`${project.title} Thumbnail`
+      width={368}
+      height={207}
+    />
+  </a>
+</div>
+
+<style>
+  .container {
+    width: auto;
+    height: auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+
+  img {
+    border-radius: 0.5em;
+  }
+</style>

@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import type { Technology } from "../config/technologies";
+
+interface Props {
+  technology: Technology;
+}
+
+const { technology } = Astro.props;
+---
+
+<div class="container">
+  <div>
+    <Image
+      src={technology.icon}
+      alt=`${technology.name} Icon`
+      width={56}
+      height={56}
+    />
+  </div>
+  
+  <a href={technology.url} target="_blank">{technology.name}</a>
+</div>
+
+<style>
+  img {
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .container {
+    width: auto;
+    height: 96px;
+    aspect-ratio: 32/9;
+    overflow: hidden;
+    display: flex;
+    background-color: #21252e;
+    padding: 1em;
+    gap: 1em;
+    border-radius: 0.5em;
+  }
+
+  .text {
+    margin: auto;
+  }
+
+  a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    font-weight: 500;
+  }
+</style>

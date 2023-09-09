@@ -1,0 +1,23 @@
+---
+import IconCard from "./IconCard.astro";
+import technologies from "../config/technologies";
+---
+
+<section id="technologies">
+  <h3>Technologies</h3>
+  <p>Some technologies I currently use! Sample text</p>
+
+  <div class="container">
+    {technologies.map(technology => (
+      <IconCard technology={technology} />
+    ))}
+  </div>
+</section>
+
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1em;
+  }
+</style>
