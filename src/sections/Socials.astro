@@ -1,0 +1,22 @@
+---
+import Icon from "../components/Icon.astro";
+import socials from "../config/socials";
+---
+
+<section id="socials">
+  <h3>Socials</h3>
+  <p>This is a sample description</p>
+
+  <div class="container">
+    {socials.map(social => (
+      <Icon social={social} />
+    ))}
+  </div>
+</section>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+</style>

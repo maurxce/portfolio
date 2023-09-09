@@ -6,6 +6,11 @@ export interface Social {
 
 const socials: Social[] = [
   {
+    name: "Email",
+    icon: "https://placehold.co/32x32",
+    url: "/mail"
+  },
+  {
     name: "GitHub",
     icon: "https://placehold.co/32x32",
     url: "/github"
@@ -14,16 +19,6 @@ const socials: Social[] = [
     name: "Discord",
     icon: "https://placehold.co/32x32",
     url: "/discord"
-  },
-  {
-    name: "Instagram",
-    icon: "https://placehold.co/32x32",
-    url: "/instagram"
-  },
-  {
-    name: "Email",
-    icon: "https://placehold.co/32x32",
-    url: "/mail"
   }
 ];
 

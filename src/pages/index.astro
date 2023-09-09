@@ -1,10 +1,11 @@
 ---
 import App from '../layouts/App.astro';
 import Navbar from '../components/Navbar.astro';
-import About from '../components/About.astro';
-import Projects from '../components/Projects.astro';
-import Technologies from '../components/Technologies.astro';
-import Socials from '../components/Socials.astro';
+import About from '../sections/About.astro';
+import Projects from '../sections/Projects.astro';
+import Technologies from '../sections/Technologies.astro';
+import Socials from '../sections/Socials.astro';
+import Footer from '@components/Footer.astro';
 ---
 
 <App title="SCHORN">
@@ -16,6 +17,8 @@ import Socials from '../components/Socials.astro';
 		<Technologies />
 		<Socials />
 	</main>
+
+	<Footer />
 </App>
 
 <style>
