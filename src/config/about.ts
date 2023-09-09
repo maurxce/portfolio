@@ -13,5 +13,6 @@ const age = (() => {
 const name = "Maurice Schorn";
 const profession = "Software developer";
 const about = `${age} year old from Germany.`;
+const picture = import("../assets/profile_picture.png");
 
-export { name, profession, about }
+export { name, profession, about, picture }

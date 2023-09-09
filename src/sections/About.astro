@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import { name, profession, about } from "../config/about";
-import profilePicture from "../assets/profile_picture.png";
+import { name, profession, about, picture } from "../config/about";
 ---
 
 <section id="about">
@@ -16,7 +15,7 @@ import profilePicture from "../assets/profile_picture.png";
   <div>
     <Image
       class="profile"
-      src={profilePicture}
+      src={picture}
       alt="Profile Picture"
       width={160}
       height={160}

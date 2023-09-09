@@ -1,23 +1,23 @@
 export interface Social {
   name: string;
-  icon: string;
+  icon: Promise<any>;
   url: string;
 }
 
 const socials: Social[] = [
   {
     name: "Email",
-    icon: "https://placehold.co/32x32",
+    icon: import("../assets/32x32.svg"),
     url: "/mail"
   },
   {
     name: "GitHub",
-    icon: "https://placehold.co/32x32",
+    icon: import("../assets/32x32.svg"),
     url: "/github"
   },
   {
     name: "Discord",
-    icon: "https://placehold.co/32x32",
+    icon: import("../assets/32x32.svg"),
     url: "/discord"
   }
 ];
