@@ -3,16 +3,16 @@ import { Image } from "astro:assets";
 
 interface Props {
   name: string;
-  img: Promise<any>;
+  image: Promise<any>;
   url: string;
 }
 
-const { name, img, url } = Astro.props;
+const { name, image, url }: Props  = Astro.props;
 ---
 
 <a href={url}>
   <Image
-    src={img}
+    src={image}
     alt=`${name} Icon`
     title={name}
     width={64}

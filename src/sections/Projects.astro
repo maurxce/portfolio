@@ -10,8 +10,8 @@ import projects from "../config/projects";
   <div class="container">
     {projects.map(project => (
       <ThumbnailCard
-        name={project.title}
-        img={project.image}
+        name={project.name}
+        image={project.image}
         url={project.url}
       />
     ))}
