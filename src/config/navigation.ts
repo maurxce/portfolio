@@ -1,9 +1,6 @@
-interface NavItem {
-  name: string;
-  url: string;
-}
+import type { Link } from "src/common/interface";
 
-const items: NavItem[] = [
+const items: Link[] = [
   {
     name: "Home",
     url: "/"

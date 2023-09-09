@@ -1,10 +1,6 @@
-export interface Social {
-  name: string;
-  image: Promise<any>;
-  url: string;
-}
+import type { ImageLink } from "src/common/interface";
 
-const socials: Social[] = [
+const socials: ImageLink[] = [
   {
     name: "Email",
     image: import("../assets/32x32.svg"),

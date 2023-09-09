@@ -1,10 +1,6 @@
-export interface Technology {
-  name: string;
-  image: Promise<any>;
-  url: string;
-}
+import type { ImageLink } from "src/common/interface";
 
-const technologies: Technology[] = [
+const technologies: ImageLink[] = [
   {
     name: "JavaScript",
     image: import("../assets/56x56.svg"),
