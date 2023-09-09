@@ -9,7 +9,11 @@ import socials from "../config/socials";
 
   <div class="container">
     {socials.map(social => (
-      <Icon social={social} />
+      <Icon
+        name={social.name}
+        img={social.icon}
+        url={social.url}
+      />
     ))}
   </div>
 </section>

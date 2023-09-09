@@ -1,26 +1,28 @@
 ---
 import { Image } from "astro:assets";
-import type { Technology } from "../config/technologies";
 
 interface Props {
-  technology: Technology;
+  name: string;
+  img: string;
+  url: string;
 }
 
-const { technology } = Astro.props;
+const { name, img, url } = Astro.props;
 ---
+
 
 <div class="container">
   <div>
     <Image
-      src={technology.icon}
-      alt=`${technology.name} Icon`
-      title={technology.name}
+      src={img}
+      alt=`${name} Icon`
+      title={name}
       width={56}
       height={56}
     />
   </div>
   
-  <a href={technology.url} target="_blank">{technology.name}</a>
+  <a href={url} target="_blank">{name}</a>
 </div>
 
 <style>

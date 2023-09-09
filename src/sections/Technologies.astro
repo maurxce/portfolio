@@ -9,7 +9,11 @@ import technologies from "../config/technologies";
 
   <div class="container">
     {technologies.map(technology => (
-      <IconCard technology={technology} />
+      <IconCard
+        name={technology.name}
+        img={technology.icon}
+        url={technology.url}
+      />
     ))}
   </div>
 </section>

@@ -9,7 +9,7 @@ const projects: Project[] = [
   {
     title: "SpelerLevels",
     description: "A custom leveling system for Minecraft",
-    thumbnail: "https://placehold.co/368x207",
+    thumbnail: "/img/SpelerLevels.png",
     path: "/projects/SpelerLevels",
   },
   {

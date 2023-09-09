@@ -1,20 +1,21 @@
 ---
 import { Image } from "astro:assets";
-import type { Project } from "../config/projects";
 
 interface Props {
-  project: Project;
+  name: string;
+  img: string;
+  url: string;
 }
 
-const { project } = Astro.props;
+const { name, img, url } = Astro.props;
 ---
 
 <div class="container">
-  <a href={project.path}>
+  <a href={url}>
     <Image
-      src={project.thumbnail}
-      alt=`${project.title} Thumbnail`
-      title={project.title}
+      src={img}
+      alt=`${name} Thumbnail`
+      title={name}
       width={368}
       height={207}
     />

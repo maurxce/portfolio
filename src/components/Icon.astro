@@ -1,19 +1,20 @@
 ---
-import { Image } from 'astro:assets'
-import type { Social } from '../config/socials'
+import { Image } from "astro:assets";
 
 interface Props {
-  social: Social;
+  name: string;
+  img: string;
+  url: string;
 }
 
-const { social } = Astro.props;
+const { name, img, url } = Astro.props;
 ---
 
-<a href={social.url}>
+<a href={url}>
   <Image
-    src={social.icon}
-    alt=`${social.name} Icon`
-    title={social.name}
+    src={img}
+    alt=`${name} Icon`
+    title={name}
     width={64}
     height={64}
   />

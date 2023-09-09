@@ -9,7 +9,11 @@ import projects from "../config/projects";
 
   <div class="container">
     {projects.map(project => (
-      <ThumbnailCard project={project} />
+      <ThumbnailCard
+        name={project.title}
+        img={project.thumbnail}
+        url={project.path}
+      />
     ))}
   </div>
 
