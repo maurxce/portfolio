@@ -1,24 +1,24 @@
 interface NavItem {
   name: string;
-  path: string;
+  url: string;
 }
 
 const items: NavItem[] = [
   {
     name: "Home",
-    path: "/"
+    url: "/"
   },
   {
     name: "Projects",
-    path: "/#projects"
+    url: "/#projects"
   },
   {
     name: "Technologies",
-    path: "/#technologies"
+    url: "/#technologies"
   },
   {
     name: "Socials",
-    path: "/#socials"
+    url: "/#socials"
   }
 ];
 
