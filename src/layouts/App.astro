@@ -4,10 +4,11 @@ import Footer from '@components/Footer.astro';
 
 interface Props {
 	page: string;
+	frontmatter?;
 }
 
-const { page } = Astro.props;
-const title = `SCHORN - ${page}`;
+const { page, frontmatter } = Astro.props;
+const title = `SCHORN - ${page || frontmatter.title}`;
 // TODO: make images non draggable?
 // @TODO: generic Projects component (maxShown?, format: vertical, horizontal)
 ---
@@ -62,6 +63,10 @@ const title = `SCHORN - ${page}`;
 
 	h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 0;
+	}
+
+	main {
+		padding-bottom: 1em !important;
 	}
 	
 	code {
