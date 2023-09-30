@@ -1,0 +1,21 @@
+---
+interface Props {
+  direction?: "row" | "column";
+}
+
+const { direction = "row" } = Astro.props;
+---
+
+<div>
+  <slot />
+</div>
+
+<style define:vars={{ direction }}>
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: var(--direction);
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+</style>

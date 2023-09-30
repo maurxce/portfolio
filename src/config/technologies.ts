@@ -40,7 +40,7 @@ const technologies: ImageLink[] = [
     name: "Spigot",
     image: import("../assets/technologies/Spigot.png"),
     url: "https://www.spigotmc.org/wiki/about-spigot/"
-  },
+  }
 ];
 
 export default technologies;

@@ -1,0 +1,29 @@
+---
+import App from "@layouts/App.astro";
+import FlexContainer from "@components/FlexContainer.astro";
+import FullwidthThumbnail from "@components/FullwidthThumbnail.astro";
+import projects from "@configs/projects";
+---
+
+<App page="Projects">
+  <h3>Projects</h3>
+  <p>This is a sample description</p>
+
+  <FlexContainer direction="column">
+    <!-- should be full width -->
+    {projects.map(project => (
+      <FullwidthThumbnail
+        name={project.name}
+        image={project.image}
+        url={project.url}
+      />
+    ))}
+  </FlexContainer>
+
+  <!--
+  {projects.map(project => (
+    <div>
+      {project.name}  
+    </div>
+  ))}-->
+</App>

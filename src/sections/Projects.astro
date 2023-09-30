@@ -1,21 +1,27 @@
 ---
+import FlexContainer from "@components/FlexContainer.astro";
+import GenericProject from "@components/GenericProject.astro";
+
 import ThumbnailCard from "../components/ThumbnailCard.astro";
 import projects from "../config/projects";
+
+const maxShown = 4;
 ---
 
 <section id="projects">
   <h3>Projects</h3>
   <p>This is a sample description</p>
 
-  <div class="container">
-    {projects.map(project => (
-      <ThumbnailCard
+  <FlexContainer>
+    {projects.map((project, index) => (
+      index < maxShown &&
+      <GenericProject
         name={project.name}
         image={project.image}
         url={project.url}
       />
     ))}
-  </div>
+  </FlexContainer>
 
   <a href="/projects">View all</a>
 </section>

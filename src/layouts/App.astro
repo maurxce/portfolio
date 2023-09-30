@@ -1,9 +1,15 @@
 ---
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+
 interface Props {
-	title: string;
+	page: string;
 }
 
-const { title } = Astro.props;
+const { page } = Astro.props;
+const title = `SCHORN - ${page}`;
+// TODO: make images non draggable?
+// @TODO: generic Projects component (maxShown?, format: vertical, horizontal)
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +24,13 @@ const { title } = Astro.props;
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 	</head>
 	<body>
-		<slot />
+		<Navbar />
+
+		<main>
+			<slot />
+		</main>
+		
+		<Footer />
 	</body>
 </html>
 

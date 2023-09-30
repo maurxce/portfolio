@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  name: string;
+  image: Promise<any>;
+  url: string;
+}
+
+// @TODO: same as ThumbnailCard
+const { name, image, url } = Astro.props;
+---
+
+<div class="container">
+  <a href={url}>
+    <Image
+      src={image}
+      alt=`${name} Thumbnail`
+      title={name}
+      width={368}
+      height={207}
+    />
+  </a>
+</div>
+
+<style>
+  .container {
+    width: auto;
+    height: auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+
+  img {
+    border-radius: 0.5em;
+  }
+</style>
