@@ -1,3 +1,5 @@
+import type { ImageMetadata } from "astro";
+
 export interface Link {
   name: string;
   description?: string;
@@ -5,5 +7,5 @@ export interface Link {
 }
 
 export interface ImageLink extends Link {
-  image: Promise<any> | string;
+  image: ImageMetadata;
 }
