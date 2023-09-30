@@ -3,11 +3,10 @@ import { Image } from 'astro:assets';
 
 interface Props {
   name: string;
-  image: Promise<any>;
+  image: Promise<any> | string;
   url: string;
 }
 
-// @TODO: same as ThumbnailCard
 const { name, image, url } = Astro.props;
 ---
 
