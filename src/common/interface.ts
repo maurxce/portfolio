@@ -5,5 +5,5 @@ export interface Link {
 }
 
 export interface ImageLink extends Link {
-  image: Promise<any>;
+  image: Promise<any> | string;
 }

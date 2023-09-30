@@ -10,7 +10,6 @@ import projects from "@configs/projects";
   <p>This is a sample description</p>
 
   <FlexContainer direction="column">
-    <!-- should be full width -->
     {projects.map(project => (
       <FullwidthThumbnail
         name={project.name}
@@ -19,11 +18,4 @@ import projects from "@configs/projects";
       />
     ))}
   </FlexContainer>
-
-  <!--
-  {projects.map(project => (
-    <div>
-      {project.name}  
-    </div>
-  ))}-->
 </App>

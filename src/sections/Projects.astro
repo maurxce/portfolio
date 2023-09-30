@@ -2,10 +2,13 @@
 import FlexContainer from "@components/FlexContainer.astro";
 import GenericProject from "@components/GenericProject.astro";
 
-import ThumbnailCard from "../components/ThumbnailCard.astro";
 import projects from "../config/projects";
 
-const maxShown = 4;
+interface Props {
+  amount: number;
+}
+ 
+const { amount } = Astro.props;
 ---
 
 <section id="projects">
@@ -14,7 +17,7 @@ const maxShown = 4;
 
   <FlexContainer>
     {projects.map((project, index) => (
-      index < maxShown &&
+      index < amount &&
       <GenericProject
         name={project.name}
         image={project.image}
@@ -23,7 +26,7 @@ const maxShown = 4;
     ))}
   </FlexContainer>
 
-  <a href="/projects">View all</a>
+  <!--<a href="/projects">View all</a>-->
 </section>
 
 <style>
