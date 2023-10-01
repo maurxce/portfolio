@@ -20,6 +20,8 @@ const { name, image, url } = Astro.props;
       width={368}
       height={207}
     />
+
+    <p>Test</p>
   </a>
 </div>
 
@@ -27,8 +29,13 @@ const { name, image, url } = Astro.props;
   .container {
     width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
     overflow: hidden;
+    background-color: aqua;
+  }
+
+  a {
+    display: flex;
+    gap: 1em;
   }
 
   img {
