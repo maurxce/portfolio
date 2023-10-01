@@ -84,9 +84,17 @@ const year = new Date().getFullYear()
 	}
 
 	body {
+		position: relative;
 		max-width: 50em;
 		margin-right: auto;
 		margin-left: auto;
+		min-height: 100vh;
+	}
+
+	body::after {
+  	content: '';
+  	display: block;
+  	height: 1em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -126,7 +134,7 @@ const year = new Date().getFullYear()
 </style>
 
 <style>
-nav {
+	nav {
     position: fixed;
     top: 0;
     left: 50%;
@@ -141,6 +149,9 @@ nav {
   }
 
 	footer {
+		position: absolute;
+  	bottom: 0;
+  	width: 100%;
     display: flex;
     justify-content: space-between;
     padding-left: 1em;
