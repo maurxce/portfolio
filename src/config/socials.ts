@@ -1,20 +1,23 @@
-import type { ImageLink } from "src/common/interface";
+import type { ImageLink } from "@common/interface";
 
 const socials: ImageLink[] = [
   {
-    name: "Email",
-    image: import("../assets/socials/Email.png"),
-    url: "/mail"
+    name: "Discord",
+    // @ts-ignore
+    image: import("../assets/socials/discord.png"),
+    url: "/discord"
   },
   {
     name: "GitHub",
-    image: import("../assets/socials/GitHub.png"),
+    // @ts-ignore
+    image: import("../assets/socials/github.png"),
     url: "/github"
   },
   {
-    name: "Discord",
-    image: import("../assets/socials/Discord.png"),
-    url: "/discord"
+    name: "Email",
+    // @ts-ignore
+    image: import("../assets/socials/email.png"),
+    url: "/mail"
   }
 ];
 

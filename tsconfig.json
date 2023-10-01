@@ -6,7 +6,7 @@
       "@assets/*": ["src/assets/*"],
       "@common/*": ["src/common/*"],
       "@components/*": ["src/components/*"],
-      "@configs/*": ["src/config/*"],
+      "@config/*": ["src/config/*"],
       "@layouts/*": ["src/layouts/*"],
       "@sections/*": ["src/sections/*"],
     }

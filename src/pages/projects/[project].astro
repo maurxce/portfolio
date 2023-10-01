@@ -1,7 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
-import type { ImageLink } from "src/common/interface";
-import projects from "@configs/projects";
+import type { ImageLink } from "@common/interface";
+import projects from "@config/projects";
 
 export const getStaticPaths = (() => {
   return projects.map((project: ImageLink) => (
@@ -10,6 +10,7 @@ export const getStaticPaths = (() => {
 }) satisfies GetStaticPaths;
 
 const { project } = Astro.props;
+console.log(project);
 ---
 
 <p>{project}</p>

@@ -1,4 +1,4 @@
-import type { Link } from "src/common/interface";
+import type { Link } from "@common/interface";
 
 const items: Link[] = [
   {
