@@ -1,0 +1,62 @@
+---
+import App from "@layouts/App.astro";
+import { Image } from 'astro:assets';
+
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+
+// can't use @-alias
+const image = import(`../assets/icons/${name.toLowerCase()}.png`);
+---
+
+<App page={`Projects - ${name}`}>
+  <section class="hero">
+    <div class="top">
+      <h3 class="title">{name}</h3>
+
+      <Image
+        src={image}
+        alt={`${name} Thumbnail`}
+        title={name}
+        width={48}
+        height={48}
+        draggable="false"
+      />
+    </div>
+    
+    <div>
+      <slot name="description" />
+    </div>
+  </section>
+
+  <slot />
+</App>
+
+<style>
+  section {
+    width: 100%;
+    padding: 2em;
+    padding-bottom: 1em;
+    background-color: #21252e;
+    border-radius: 0.5em;
+  }
+
+  .hero .top {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .top img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .title {
+    font-family: "Minecraft";
+    font-weight: normal;
+  }
+</style>

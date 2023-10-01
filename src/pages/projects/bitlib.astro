@@ -1,28 +1,12 @@
 ---
-import App from "@layouts/App.astro";
-import { Image } from 'astro:assets';
+import Project from '@components/Project.astro';
 ---
 
-<App page="Project - BitLib">
-  <section>
-    <Image
-      src={import("@assets/projects/bitlib.png")}
-      alt="BitLib Thumbnail"
-      title="BitLib"
-      width={1280}
-      height={720}
-      draggable="false"
-    />
-  </section>
-  
-  <section>
-    <h3>BitLib</h3>
-
-    <p>
-      BitLib is my custom spigot library which aims to make development faster and more efficient. <br />
-      This library is still in it's early development, so that might not always apply yet
-    </p>
-  </section>
+<Project name="BitLib">
+  <p slot="description">
+    BitLib is my custom spigot library which aims to make development faster and more efficient. <br />
+    This library is still in it's early development, so that might not always apply yet.
+  </p>
 
   <section>
     <h4>Features</h4>
@@ -40,11 +24,11 @@ import { Image } from 'astro:assets';
         <a href="https://en.wikipedia.org/wiki/Template_processor" target="_blank">templating</a> 
         possibilities
       </li>
-      <li>selfregistering Commands and EventListeners</li>
-      <li>improved YAML Config class</li>
-      <li>predefined datbase methods</li>
-      <li>various utilities for players and items</li>
-      <li>log filters</li>
+      <li>Selfregistering Commands and EventListeners</li>
+      <li>Improved YAML Config class</li>
+      <li>Predefined datbase methods</li>
+      <li>Various utilities for players and items</li>
+      <li>Log filters</li>
     </ul>
   </section>
-</App>
+</Project>
