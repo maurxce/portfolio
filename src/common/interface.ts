@@ -13,4 +13,5 @@ export interface Icon {
 
 export interface Card extends Icon {
   description: string;
+  icon: ImageMetadata;
 }

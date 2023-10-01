@@ -1,7 +1,5 @@
 import type { Card } from "@common/interface";
-// @TODO: add BitLib, BedrockManager?
 // @TODO sort by tag?
-// @TODO url necessary? image?
 
 const projects: Card[] = [
   {
@@ -9,6 +7,8 @@ const projects: Card[] = [
     description: "My own Spgiot library",
     // @ts-ignore
     image: import("@assets/projects/bitlib.png"),
+    // @ts-ignore
+    icon: import("@assets/icons/bitlib.png"),
     url: "/projects/bitlib"
   },
   {
@@ -16,6 +16,8 @@ const projects: Card[] = [
     description: "A custom plugin and api for managing bedrock players via floodgate",
     // @ts-ignore
     image: import("@assets/projects/bedrockmanager.png"), 
+    // @ts-ignore
+    icon: import("@assets/icons/bedrockmanager.png"),
     url: "/projects/bedrockmanager"
   },
   {
@@ -23,6 +25,8 @@ const projects: Card[] = [
     description: "A Player-managed warp plugin for Minecraft",
     // @ts-ignore
     image: import("@assets/projects/spelerwarps.png"),
+    // @ts-ignore
+    icon: import("@assets/icons/spelerwarps.png"),
     url: "/projects/spelerwarps"
   },
   {
@@ -30,6 +34,8 @@ const projects: Card[] = [
     description: "Busy? Watch others play in the meantime", // nice for afk streamers maybe
     // @ts-ignore
     image: import("@assets/projects/idlewatch.png"),
+    // @ts-ignore
+    icon: import("@assets/icons/idlewatch.png"),
     url: "/projects/idlewatch"
   },
   {
@@ -37,6 +43,8 @@ const projects: Card[] = [
     description: "Boost xp gain and shop sell for everyone",
     // @ts-ignore
     image: import("@assets/projects/boosters.png"),
+    // @ts-ignore
+    icon: import("@assets/icons/boosters.png"),
     url: "/projects/boosters"
   },
   {
@@ -44,6 +52,8 @@ const projects: Card[] = [
     description: "Unlock dimensions by donating to a money pool",
     // @ts-ignore
     image: import("@assets/projects/paidportals.png"),
+    // @ts-ignore
+    icon: import("@assets/icons/paidportals.png"),
     url: "/projects/paidportals"
   }
 ];

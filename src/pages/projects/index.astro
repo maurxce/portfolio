@@ -1,7 +1,7 @@
 ---
 import App from "@layouts/App.astro";
 import Container from "@components/Container.astro";
-import FullwidthThumbnail from "@components/FullwidthThumbnail.astro";
+import IconCard from "@components/IconCard.astro";
 import projects from "@config/projects";
 ---
 
@@ -11,9 +11,9 @@ import projects from "@config/projects";
 
   <Container direction="column">
     {projects.map(project => (
-      <FullwidthThumbnail
+      <IconCard
         name={project.name}
-        image={project.image}
+        image={project.icon}
         url={project.url}
       />
     ))}

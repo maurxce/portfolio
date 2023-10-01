@@ -4,19 +4,19 @@ const socials: Icon[] = [
   {
     name: "Discord",
     // @ts-ignore
-    image: import("../assets/socials/discord.png"),
+    image: import("@assets/socials/discord.png"),
     url: "/discord"
   },
   {
     name: "GitHub",
     // @ts-ignore
-    image: import("../assets/socials/github.png"),
+    image: import("@assets/socials/github.png"),
     url: "/github"
   },
   {
     name: "Email",
     // @ts-ignore
-    image: import("../assets/socials/email.png"),
+    image: import("@assets/socials/email.png"),
     url: "/mail"
   }
 ];

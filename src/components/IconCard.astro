@@ -13,26 +13,19 @@ const { name, image, url }: Props = Astro.props;
 
 
 <div class="container">
-  <div>
-    <Image
-      src={image}
-      alt={`${name} Icon`}
-      title={`${name} Skillicon`}
-      width={56}
-      height={56}
-      draggable="false"
-    />
-  </div>
+  <Image
+    src={image}
+    alt={`${name} Icon`}
+    title={`${name} Skillicon`}
+    width={56}
+    height={56}
+    draggable="false"
+  />
   
   <a href={url} target="_blank">{name}</a>
 </div>
 
 <style>
-  img {
-    /*border-radius: 50%;*/
-    margin: auto;
-  }
-
   .container {
     width: auto;
     height: 96px;
