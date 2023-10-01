@@ -5,12 +5,19 @@ import projects from "@config/projects";
 
 export const getStaticPaths = (() => {
   return projects.map((project: ImageLink) => (
-    { params: { project: project.name.toLowerCase() } }
+    {
+      params: {
+        path: project.name.toLowerCase()
+      },
+      props: {
+        name: project.name
+      }
+    }
   ));
 }) satisfies GetStaticPaths;
 
-const { project } = Astro.props;
-console.log(project);
+const { name } = Astro.props;
+console.log(name);
 ---
 
-<p>{project}</p>
+<p>{name}</p>
