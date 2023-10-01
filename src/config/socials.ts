@@ -17,7 +17,7 @@ const socials: Icon[] = [
     name: "Email",
     // @ts-ignore
     image: import("@assets/socials/email.png"),
-    url: "/mail"
+    url: "mailto:contact@schorn.md"
   }
 ];
 

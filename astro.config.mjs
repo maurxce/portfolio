@@ -8,8 +8,7 @@ export default defineConfig({
   site: "https://schorn.md",
   redirects: {
     "/discord": "https://discordapp.com/users/398509167351955456/",
-    "/github": "https://github.com/maurxce/",
-    "/mail": "mailto:contact@schorn.md"
+    "/github": "https://github.com/maurxce/"
   },
   integrations: [
     robotsTxt({
