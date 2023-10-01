@@ -5,11 +5,11 @@ import type { ImageMetadata } from "astro";
 interface Props {
   name: string;
   image: ImageMetadata;
-  description?: string;
+  description: string;
   url: string;
 }
 
-const { name, image, description = "", url } = Astro.props;
+const { name, image, description, url } = Astro.props;
 ---
 
 <div class="container">
