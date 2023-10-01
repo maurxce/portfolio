@@ -1,6 +1,6 @@
 ---
 import Container from "@components/Container.astro";
-import GenericProject from "@components/GenericProject.astro";
+import ThumbnailCard from "@components/ThumbnailCard.astro";
 
 import projects from "@config/projects";
 
@@ -18,7 +18,7 @@ const { amount } = Astro.props;
   <Container>
     {projects.map((project, index) => (
       index < amount &&
-      <GenericProject
+      <ThumbnailCard
         name={project.name}
         image={project.image}
         description={project.description}
