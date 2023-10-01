@@ -1,10 +1,9 @@
 ---
 import type { GetStaticPaths } from "astro";
-import type { ImageLink } from "@common/interface";
 import projects from "@config/projects";
 
 export const getStaticPaths = (() => {
-  return projects.map((project: ImageLink) => (
+  return projects.map(project => (
     {
       params: {
         path: project.name.toLowerCase()

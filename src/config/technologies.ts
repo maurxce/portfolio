@@ -1,6 +1,6 @@
-import type { ImageLink } from "@common/interface";
+import type { Icon } from "@common/interface";
 
-const technologies: ImageLink[] = [
+const technologies: Icon[] = [
   {
     name: "JavaScript",
     // @ts-ignore

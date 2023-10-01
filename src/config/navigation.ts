@@ -1,6 +1,6 @@
-import type { Link } from "@common/interface";
+import type { Navigation } from "@common/interface";
 
-const items: Link[] = [
+const items: Navigation[] = [
   {
     name: "Home",
     url: "/"

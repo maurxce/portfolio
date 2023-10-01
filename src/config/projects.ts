@@ -1,9 +1,9 @@
-import type { ImageLink } from "@common/interface";
+import type { Card } from "@common/interface";
 // @TODO: add BitLib, BedrockManager?
 // @TODO sort by tag?
 // @TODO url necessary? image?
 
-const projects: ImageLink[] = [
+const projects: Card[] = [
   {
     name: "BitLib",
     description: "My own Spgiot library",

@@ -1,6 +1,6 @@
-import type { ImageLink } from "@common/interface";
+import type { Icon } from "@common/interface";
 
-const socials: ImageLink[] = [
+const socials: Icon[] = [
   {
     name: "Discord",
     // @ts-ignore
