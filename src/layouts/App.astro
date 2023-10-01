@@ -1,4 +1,5 @@
 ---
+import { SEOMetadata } from "astro-seo-metadata";
 import navigation from "@config/navigation";
 
 interface Props {
@@ -22,6 +23,18 @@ const year = new Date().getFullYear()
 		<title>{title}</title>
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+		<SEOMetadata
+			siteName="SCHORN"
+			title={title}
+			description="SCHORN portfolio website powered by Astro"
+			favicon="/favicon.svg"
+			author="Maurice Schorn"
+			copyright="MIT"
+			canonicalUrl={Astro.url.toString()}
+			type="website"
+			astroGenerator={true}
+		/>
 	</head>
 	<body>
 		<nav>
