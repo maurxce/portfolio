@@ -12,11 +12,11 @@ const projects: Card[] = [
     url: "/projects/bitlib"
   },
   {
-    name: "SpelerLevels",
-    description: "A custom leveling system for Minecraft",
+    name: "BedrockManager",
+    description: "A custom plugin and api for managing bedrock players via floodgate",
     // @ts-ignore
-    image: import("@assets/projects/spelerlevels.png"), 
-    url: "/projects/spelerlevels"
+    image: import("@assets/projects/bedrockmanager.png"), 
+    url: "/projects/bedrockmanager"
   },
   {
     name: "SpelerWarps",

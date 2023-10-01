@@ -1,0 +1,21 @@
+---
+import App from "@layouts/App.astro";
+import { Image } from 'astro:assets';
+---
+
+<App page="Project - SpelerLevels">
+  <section>
+    <Image
+      src={import("@assets/projects/spelerlevels.png")}
+      alt="SpelerLevels Thumbnail"
+      title="SpelerLevels"
+      width={1280}
+      height={720}
+      draggable="false"
+    />
+  </section>
+
+  <section>
+    <h3>SpelerLevels</h3>
+  </section>
+</App>

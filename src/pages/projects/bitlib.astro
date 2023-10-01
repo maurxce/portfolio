@@ -1,0 +1,50 @@
+---
+import App from "@layouts/App.astro";
+import { Image } from 'astro:assets';
+---
+
+<App page="Project - BitLib">
+  <section>
+    <Image
+      src={import("@assets/projects/bitlib.png")}
+      alt="BitLib Thumbnail"
+      title="BitLib"
+      width={1280}
+      height={720}
+      draggable="false"
+    />
+  </section>
+  
+  <section>
+    <h3>BitLib</h3>
+
+    <p>
+      BitLib is my custom spigot library which aims to make development faster and more efficient. <br />
+      This library is still in it's early development, so that might not always apply yet
+    </p>
+  </section>
+
+  <section>
+    <h4>Features</h4>
+
+    <p>
+      Since BitLib is far from being ready for public use, I will instead just briefly list some
+      of the features it provides
+    </p>
+
+    <ul>
+      <li>
+        ItemBuilder with 
+        <a href="https://www.spigotmc.org/resources/head-database.14280/" target="_blank">HeadDatabase</a> 
+        integration and 
+        <a href="https://en.wikipedia.org/wiki/Template_processor" target="_blank">templating</a> 
+        possibilities
+      </li>
+      <li>selfregistering Commands and EventListeners</li>
+      <li>improved YAML Config class</li>
+      <li>predefined datbase methods</li>
+      <li>various utilities for players and items</li>
+      <li>log filters</li>
+    </ul>
+  </section>
+</App>
