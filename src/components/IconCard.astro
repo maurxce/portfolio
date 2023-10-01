@@ -6,9 +6,10 @@ interface Props {
   name: string;
   image: ImageMetadata;
   url: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
 }
 
-const { name, image, url }: Props = Astro.props;
+const { name, image, url, target = "_blank" }: Props = Astro.props;
 ---
 
 
@@ -22,7 +23,7 @@ const { name, image, url }: Props = Astro.props;
     draggable="false"
   />
   
-  <a href={url} target="_blank">{name}</a>
+  <a href={url} target={target}>{name}</a>
 </div>
 
 <style>
