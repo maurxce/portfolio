@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "astro": "^3.0.12",
-    "luxon": "^3.4.3"
+    "astro-purgecss": "^3.2.1",
+    "astro-robots-txt": "^1.0.0",
+    "luxon": "^3.4.3",
+    "purgecss": "^5.0.0"
   }
 }
