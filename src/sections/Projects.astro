@@ -1,5 +1,5 @@
 ---
-import FlexContainer from "@components/FlexContainer.astro";
+import Container from "@components/Container.astro";
 import GenericProject from "@components/GenericProject.astro";
 
 import projects from "@config/projects";
@@ -15,7 +15,7 @@ const { amount } = Astro.props;
   <h3>Projects</h3>
   <p>Here are some of my most recent projects</p>
 
-  <FlexContainer>
+  <Container>
     {projects.map((project, index) => (
       index < amount &&
       <GenericProject
@@ -25,7 +25,7 @@ const { amount } = Astro.props;
         url={project.url}
       />
     ))}
-  </FlexContainer>
+  </Container>
 
   <!--<a href="/projects">View all</a>-->
 </section>

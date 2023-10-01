@@ -1,5 +1,5 @@
 ---
-import FlexContainer from "@components/FlexContainer.astro";
+import Container from "@components/Container.astro";
 import IconCard from "@components/IconCard.astro";
 import technologies from "@config/technologies";
 ---
@@ -8,7 +8,7 @@ import technologies from "@config/technologies";
   <h3>Technologies</h3>
   <p>These are some of the technologies I use for my projects</p>
 
-  <FlexContainer>
+  <Container>
     {technologies.map(technology => (
       <IconCard
         name={technology.name}
@@ -16,7 +16,7 @@ import technologies from "@config/technologies";
         url={technology.url}
       />
     ))}
-  </FlexContainer>
+  </Container>
 </section>
 
 <style>
