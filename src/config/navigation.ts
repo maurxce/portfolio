@@ -3,7 +3,7 @@ import type { Navigation } from "@common/interface";
 const items: Navigation[] = [
   {
     name: "Home",
-    url: "/"
+    url: "/#"
   },
   {
     name: "Projects",
