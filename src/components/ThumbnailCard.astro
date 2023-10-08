@@ -47,7 +47,7 @@ const { name, image, description, url } = Astro.props;
   }
 
   p.description {
-    visibility: hidden;
+    display: none;
   }
 
   @media (min-width: 53.25em) {
@@ -58,7 +58,7 @@ const { name, image, description, url } = Astro.props;
     }
 
     p.description  {
-      visibility: visible;
+      display: block;
       position: absolute;
       top: 0;
       left: 0;
