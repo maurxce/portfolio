@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import { name, profession, about, picture } from "@config/about";
+import { picture } from "@config/about";
 ---
 
 <section id="about">
   <div>
     <div>
-      <p class="name">{name}</p>
-      <p class="profession">{profession}</p>
-      <p class="about">{about}</p>
+      <p class="name"></p>
+      <p class="profession"></p>
+      <p class="about"></p>
     </div>
   </div>
 
@@ -23,6 +23,18 @@ import { name, profession, about, picture } from "@config/about";
     />
   </div>
 </section>
+
+<script>
+  import { name, profession, about } from "@config/about";
+  
+  put("p.name", name);
+  put("p.profession", profession);
+  put("p.about", about);
+
+  function put(selector: string, content: string) {
+    document.querySelector(selector).innerHTML = content;
+  }
+</script>
 
 <style>
   section {

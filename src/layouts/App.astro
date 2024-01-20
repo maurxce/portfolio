@@ -9,8 +9,6 @@ interface Props {
 
 const { page, frontmatter } = Astro.props;
 const title = `SCHORN - ${page || frontmatter.title}`;
-const year = new Date().getFullYear()
-// @TODO: generic Projects component (maxShown?, format: vertical, horizontal)
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -52,11 +50,16 @@ const year = new Date().getFullYear()
 		</main>
 		
 		<footer>
-			<p><b>© Maurice Schorn</b> — 2022 - {year}</p>
+			<p><b>© Maurice Schorn</b> — 2022 - <p class="year"></p></p>
 			<a href="/legal">Legal</a>
 		</footer>
 	</body>
 </html>
+
+<script>
+	const paragraph = document.querySelector("p.year");
+	paragraph.innerHTML = `${new Date().getFullYear()}`;
+</script>
 
 <style is:global>
 	@font-face {
