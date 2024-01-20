@@ -50,14 +50,14 @@ const title = `SCHORN - ${page || frontmatter.title}`;
 		</main>
 		
 		<footer>
-			<p><b>© Maurice Schorn</b> — 2022 - <p class="year"></p></p>
+			<p><b>© Maurice Schorn</b> — 2022 - <span class="year"></span></p>
 			<a href="/legal">Legal</a>
 		</footer>
 	</body>
 </html>
 
 <script>
-	const paragraph = document.querySelector("p.year");
+	const paragraph = document.querySelector("span.year");
 	paragraph.innerHTML = `${new Date().getFullYear()}`;
 </script>
 
