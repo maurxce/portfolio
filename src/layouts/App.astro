@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { page, frontmatter } = Astro.props;
-const title = `SCHORN - ${page || frontmatter.title}`;
+const title = `schorn. - ${page || frontmatter.title}`;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -23,9 +23,9 @@ const title = `SCHORN - ${page || frontmatter.title}`;
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 
 		<SEOMetadata
-			siteName="SCHORN"
+			siteName="schorn."
 			title={title}
-			description="SCHORN portfolio website powered by Astro"
+			description="Maurice Schorn portfolio website powered by Astro"
 			favicon="/favicon.svg"
 			author="Maurice Schorn"
 			copyright="MIT"
